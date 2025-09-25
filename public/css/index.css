@@ -11,7 +11,7 @@
   font-family: "Nunito", sans-serif;
 }
 :root {
-  --bg-color: #b1befd;
+  --bg-color: #191f36;
   --snd-bf-color: #262840;
   --text-color: #ffffff;
   --main-color: #5982f4;
@@ -27,7 +27,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  background: var(--snd-bf-color);
+  background: var(--bg-color);
   color: var(--text-color);
 }
 /* header */
@@ -63,12 +63,31 @@ body {
   display: flex;
   list-style: none;
 }
-.menu li a {
+.menu li {
   display: inline-block;
   padding: 2rem;
   color: var(--text-color);
-  border-radius: 3px;
+  position: relative;
+}
+.menu li .submenu {
+  display: none;
+}
+.menu li:hover .submenu {
+  display: block;
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+}
+.menu li:hover .submenu li {
+  padding: 0;
+}
+.menu li:hover .submenu li a {
+  display: inline-block;
+  padding: 1rem 0 0.5rem;
+}
+.menu li a {
   transition: all 0.5s ease;
+  color: var(--text-color);
 }
 .menu li a.active,
 .menu li a:hover {
@@ -78,7 +97,7 @@ body {
 }
 .nav .search {
   margin-left: 3rem;
-  display: flex;
+  display: none;
   align-items: center;
 }
 .search input {
@@ -168,6 +187,7 @@ section.home {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  background-color: var(--snd-bf-color);
 }
 .about-img img {
   width: 35vw;
@@ -201,6 +221,49 @@ section.home {
 .about-content a:hover {
   color: var(--main-color);
   background-color: var(--text-color);
+  box-shadow: 0px 0px 4px 1px var(--main-color);
+  box-shadow: 0px 0px 8px 2px var(--main-color);
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.service {
+  width: 50%;
+  background: var(--snd-bf-color);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0px 0px 4px 1px var(--main-color);
+  box-shadow: 0px 0px 8px 2px var(--main-color);
+}
+.main-services .service-box:nth-of-type(1) {
+  margin-bottom: 3rem;
+}
+.main-services .service-box h3,
+.main-services .service-box i {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: 0.8rem;
+}
+.main-services .service-box p {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.main-services .service-box a {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+.main-services .service-box a:hover {
   box-shadow: 0px 0px 4px 1px var(--main-color);
   box-shadow: 0px 0px 8px 2px var(--main-color);
 }
