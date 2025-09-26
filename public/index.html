@@ -21,7 +21,6 @@
       <header class="header">
         <div class="logo">
           <h2>Mbiyu Insights</h2>
-          <p>A new look at life</p>
         </div>
         <nav class="nav">
           <i class="fa-solid fa-bars bars"></i>
@@ -200,14 +199,21 @@
       <!-- SECTION CONTACT -->
       <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#" method="post">
+        <form action="/" method="post">
           <div class="inputBox">
-            <input type="text" name="name" id="name" placeholder="Full Name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              required
+            />
             <input
               type="text"
               name="email"
               id="email"
               placeholder="Email Address"
+              required
             />
           </div>
           <div class="inputBox">
@@ -217,7 +223,13 @@
               id="number"
               placeholder="Mobile Number"
             />
-            <input type="text" placeholder="Email subject" />
+            <input
+              type="text"
+              placeholder="Email subject"
+              name="emailSubject"
+              id="emailSub"
+              required
+            />
           </div>
           <textarea
             name=""
@@ -225,10 +237,20 @@
             rows="10"
             cols="30"
             placeholder="Your Message"
+            required
           ></textarea>
-          <input type="submit" value="Send Message" class="btn" />
+          <input type="submit" value="Send Message" class="btn btn-form" />
         </form>
       </section>
+      <!-- SECTION FOOTER -->
+      <footer class="footer">
+        <div class="footer-text">
+          <p>Copyright &copy; 2025 by @mbiyuinspired | All rights reserverd</p>
+        </div>
+        <div class="footer-iconTop">
+          <a href="#home"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+      </footer>
     </div>
     <script src="./js/index.js"></script>
   </body>

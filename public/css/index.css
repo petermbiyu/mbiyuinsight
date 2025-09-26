@@ -330,7 +330,7 @@ section.home {
   padding: 0 4rem;
   transform: translateY(100%);
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 .pro-box:hover .pro-layer {
   transform: translateY(0);
@@ -350,14 +350,86 @@ section.home {
   width: 5rem;
   height: 5rem;
   background: var(--text-color);
+  color: var(--main-color);
   border-radius: 50%;
 }
-.pro-box:hover a i {
-  font-size: 2rem;
+.pro-box a i {
+  font-size: 1.6rem;
 }
 
-.contact h2 {
+.contact h2.heading {
   margin-bottom: 3rem;
-
+}
+.contact h2 span {
+  color: var(--main-color);
+}
+.contact form {
+  width: 70rem;
+  margin: 1rem auto 3rem;
+  text-align: center;
+}
+.contact form .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact form .inputBox input,
+.contact form textarea {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--snd-bf-color);
+  border-radius: 0.8rem;
+}
+.contact form textarea {
+  resize: none;
+  width: 100%;
+}
+.contact form .inputBox input {
+  width: 49%;
+}
+.contact form .btn-form {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+.contact form .btn-form:hover {
+  box-shadow: 0px 0px 4px 1px var(--main-color);
+  box-shadow: 0px 0px 8px 2px var(--main-color);
+}
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 7%;
+  background-color: var(--snd-bf-color);
+}
+.footer .footer-text {
+  font-size: 1.6rem;
 }
 
+.footer-iconTop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-iconTop a {
+  color: var(--text-color);
+  text-decoration: none;
+  background: var(--main-color);
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+}
+.footer-iconTop a:hover {
+  box-shadow: 0px 0px 4px 1px var(--main-color);
+  box-shadow: 0px 0px 8px 2px var(--main-color);
+}
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--snd-bf-color);
+}
