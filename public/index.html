@@ -27,9 +27,16 @@
           <i class="fa-solid fa-bars bars"></i>
           <ul class="menu">
             <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#blogs">Blogs</a></li>
             <li><a href="#about">About</a></li>
-            <!-- <li><a href="#blogs">Blogs</a></li> -->
-            <li><a href="#services">Services</a></li>
+            <li id="portfolio">
+              Portfolio
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+              <ul class="submenu" id="submenu">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+              </ul>
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="search">
@@ -85,9 +92,17 @@
         </div>
       </section>
       <!-- SECTION SERVICES -->
-      <section class="services" id="services">
-        <div class="skills"></div>
-        <div class="main-services">
+      <section class="services" id="skills">
+        <div class="service skills">
+          <h3>Skills</h3>
+          <div class="skills">
+            <p>Vanilla JavaScript<span>80%</span></p>
+            <p>NodeJS - (Express())<span>70%</span></p>
+            <p>SQL - (SQLITE, MySQL)<span>70%</span></p>
+            <p>REACT<span>50%</span></p>
+          </div>
+        </div>
+        <div class="service main-services">
           <div class="service-box">
             <i class="fa-solid fa-code"></i>
             <h3>Web Dev (UI/UX)</h3>
@@ -110,6 +125,111 @@
           </div>
         </div>
       </section>
+      <!-- SECTION PROJECTS -->
+      <section class="projects" id="projects">
+        <h2 class="sect-heading">Latest <span>Projects</span></h2>
+        <div class="pro-container">
+          <div class="pro-box">
+            <img src="./img/project-img/digital-card.jpg" alt="digital card" />
+            <div class="pro-layer">
+              <h4>Web Dev</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Facilis, sequi?
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="pro-box">
+            <img src="./img/project-img/digital-card.jpg" alt="digital card" />
+            <div class="pro-layer">
+              <h4>Web Dev</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Facilis, sequi?
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="pro-box">
+            <img src="./img/project-img/digital-card.jpg" alt="digital card" />
+            <div class="pro-layer">
+              <h4>Web Dev</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Facilis, sequi?
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="pro-box">
+            <img src="./img/project-img/digital-card.jpg" alt="digital card" />
+            <div class="pro-layer">
+              <h4>Web Dev</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Facilis, sequi?
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="pro-box">
+            <img src="./img/project-img/digital-card.jpg" alt="digital card" />
+            <div class="pro-layer">
+              <h4>Web Dev</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Facilis, sequi?
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="pro-box">
+            <img src="./img/project-img/digital-card.jpg" alt="digital card" />
+            <div class="pro-layer">
+              <h4>Web Dev</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Facilis, sequi?
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION CONTACT -->
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#" method="post">
+          <div class="inputBox">
+            <input type="text" name="name" id="name" placeholder="Full Name" />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="inputBox">
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Mobile Number"
+            />
+            <input type="text" placeholder="Email subject" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            rows="10"
+            cols="30"
+            placeholder="Your Message"
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </form>
+      </section>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
